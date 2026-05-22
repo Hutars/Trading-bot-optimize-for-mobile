@@ -19,7 +19,7 @@ logging.basicConfig(filename='paper_trades.log', level=logging.INFO, format='%(a
 
 @st.cache_resource
 def get_exchange():
-    return ccxt.binance({'enableRateLimit': True})
+    return ccxt.binanceus({'enableRateLimit': True})
 
 exchange = get_exchange()
 
